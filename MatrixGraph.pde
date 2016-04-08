@@ -360,7 +360,7 @@ class MatrixGraph extends Group{
           else {
             line = new Line(initialX, initialY, initialX, initialY - (cellHeight * axisPercent));
             aux = (int)(nextValue*10);
-            value = String.valueOf((float)aux/10);
+            value = str((float)aux/10);
             print("Value: " + aux + "<->" + value + "\n");  
             text = new Text(value ,initialX, initialY - (cellHeight * axisPercent * 2));
             text.fillColor(labelBackgroundColor);
@@ -398,7 +398,7 @@ class MatrixGraph extends Group{
           else {
             line = new Line(initialX, initialY, initialX, initialY + (cellHeight * axisPercent));
             aux = (int)(nextValue*10);
-            value = String.valueOf((float)aux/10);
+            value = str((float)aux/10);
             text = new Text(value ,initialX, initialY + (cellHeight * axisPercent * 2) + size);
             print("Value: " + aux + "<->" + value + "\n");  
             text.fillColor(labelBackgroundColor);
@@ -436,7 +436,7 @@ class MatrixGraph extends Group{
           else {
             line = new Line(initialX, initialY, initialX - (cellWidth * axisPercent), initialY);
             aux = (int)(nextValue*10);
-            value = String.valueOf((float)aux/10);
+            value = str((float)aux/10);
             print("Value: " + aux + "<->" + value + "\n");               
             text = new Text(value ,initialX - (cellWidth * axisPercent) - size*2, initialY);
             text.fillColor(labelBackgroundColor);
@@ -474,7 +474,7 @@ class MatrixGraph extends Group{
           else {
             line = new Line(initialX, initialY, initialX + (cellWidth * axisPercent), initialY);
             aux = (int)(nextValue*10);
-            value = String.valueOf((float)aux/10);
+            value = str((float)aux/10);
             print("Value: " + aux + "<->" + value + "\n");            
             text = new Text(value ,initialX + (cellWidth * axisPercent) + size, initialY);
             text.fillColor(labelBackgroundColor);
