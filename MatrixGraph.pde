@@ -322,6 +322,7 @@ class MatrixGraph extends Group{
     float max;
     float spacing;
     float nextValue;
+    int aux;
     float size;
     
     float initialX;
@@ -358,7 +359,9 @@ class MatrixGraph extends Group{
           }
           else {
             line = new Line(initialX, initialY, initialX, initialY - (cellHeight * axisPercent));
-            value = String.format("%.1f", nextValue);
+            aux = (int)(nextValue*10);
+            value = String.valueOf((float)aux/10);
+            print("Value: " + aux + "<->" + value + "\n");  
             text = new Text(value ,initialX, initialY - (cellHeight * axisPercent * 2));
             text.fillColor(labelBackgroundColor);
             text.fontSize((int)size);
@@ -394,8 +397,10 @@ class MatrixGraph extends Group{
           }
           else {
             line = new Line(initialX, initialY, initialX, initialY + (cellHeight * axisPercent));
-            value = String.format("%.1f", nextValue);
+            aux = (int)(nextValue*10);
+            value = String.valueOf((float)aux/10);
             text = new Text(value ,initialX, initialY + (cellHeight * axisPercent * 2) + size);
+            print("Value: " + aux + "<->" + value + "\n");  
             text.fillColor(labelBackgroundColor);
             text.fontSize((int)size);
             add(text);
@@ -430,7 +435,9 @@ class MatrixGraph extends Group{
           }
           else {
             line = new Line(initialX, initialY, initialX - (cellWidth * axisPercent), initialY);
-            value = String.format("%.1f", nextValue);
+            aux = (int)(nextValue*10);
+            value = String.valueOf((float)aux/10);
+            print("Value: " + aux + "<->" + value + "\n");               
             text = new Text(value ,initialX - (cellWidth * axisPercent) - size*2, initialY);
             text.fillColor(labelBackgroundColor);
             text.fontSize((int)size);
@@ -466,7 +473,9 @@ class MatrixGraph extends Group{
           }
           else {
             line = new Line(initialX, initialY, initialX + (cellWidth * axisPercent), initialY);
-            value = String.format("%.1f", nextValue);
+            aux = (int)(nextValue*10);
+            value = String.valueOf((float)aux/10);
+            print("Value: " + aux + "<->" + value + "\n");            
             text = new Text(value ,initialX + (cellWidth * axisPercent) + size, initialY);
             text.fillColor(labelBackgroundColor);
             text.fontSize((int)size);
