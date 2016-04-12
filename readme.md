@@ -34,22 +34,25 @@ Gracias a que es posible mostrar múltiples variables, es posible observar y ana
 Es posible especificar en cuales de los lados, ya sea ninguno, uno, dos, tres o todos ellos mostrar la escala de los ejes para cada variable. Esto permite un mejor entendimiento de los datos mostrados ya que es posible identificar un valor numérico aproximado para cada una de estas variables.
 
 Esto se logra modificando los atributos de la gráfica:
+```javascript
 > //Mostrar el eje en todos los lados
 > grafica.axisBottom = true;
 > grafica.axisTop = true;
 > grafica.axisLeft = true;
 > grafica.axisRight = true;
+```
 
 ###### Etiquetas:
 Las etiquetas facilitan la identificación de los ejes, es una forma muy natural de saber el nombre del parámetro que esta siendo representado en un eje determinado.
 
 Esta configuración se puede realizar de la siguiente manera:
+```javascript
 > //Mostrar las etiquetas en todos los lados
 > grafica.labelBottom = true;
 > grafica.labelTop = true;
 > grafica.labelLeft = true;
 > grafica.labelRight = true;
-
+```
 ####### Colores:
 
 
