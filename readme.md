@@ -54,6 +54,19 @@ Esta configuración se puede realizar de la siguiente manera:
 > grafica.labelRight = true;
 ```
 ####### Colores:
+Otra cualidad que puede ser modificada son los colores de la matriz, los puntos, los bordes y las etiquetas, cada una de ellas puede tener un color distinto si así lo desea.
 
-
+Esta configuración se puede realizar de la siguiente manera:
+```javascript
+> //Cambiar el color del relleno de la matriz
+> grafica.matrixBackgroudnColor = #FFFFFF;
+> //Cambiar el color de los bordes de la matriz
+> grafica.matrixBorderColor = #000000;
+> //Cambiar el color de los bordes de los puntos de la matriz
+> grafica.dotBorderColor = #EFEFEF
+> //Cambiar el color del relleno de los puntos de la matriz
+> grafica.dotBackgroundColor = #EFEFEF
+> //Cambiar el color del texto/etiquetas de la matriz
+> grafica.labelBackgroundColor = #EFEFEF
+```
 
