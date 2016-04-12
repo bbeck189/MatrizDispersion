@@ -53,7 +53,7 @@ Esta configuración se puede realizar de la siguiente manera:
 > grafica.labelLeft = true;
 > grafica.labelRight = true;
 ```
-####### Colores:
+###### Colores:
 Otra cualidad que puede ser modificada son los colores de la matriz, los puntos, los bordes y las etiquetas, cada una de ellas puede tener un color distinto si así lo desea.
 
 Esta configuración se puede realizar de la siguiente manera:
@@ -70,3 +70,29 @@ Esta configuración se puede realizar de la siguiente manera:
 > grafica.labelBackgroundColor = #EFEFEF
 ```
 
+###### Valores:
+Es posible establecer manualmente los valores mínimos, máximos de la matriz, el número de divisiones que tendra cada eje, las etiquetas de la matriz, margenes y por supuesto su conjunto de datos. A continuacón veremos cada uno de ellos.
+
+Esta configuración se puede realizar de la siguiente manera:
+```javascript
+> //Cambiar los margenes de la matriz (porcentaje)
+> grafica.marginPercent = 0.10;
+> //Cambiar los valores mínimos de cada variable
+> grafica.minValues = new float[] {0, 0, 0, 0};
+> //Cambiar los valores máximos de cada variable
+> grafica.minValues = new float[] {10, 100, 100, 5};
+> //Cambiar el número de divisiones de cada variable
+> grafica.axisDivisions = new int[] {5, 10, 10, 5};
+> //Cambiar las etiquetas de cada variable
+> grafica.labels = new String[] {"Edad", "Peso", "Estatura","Hijos"};
+> //Cambiar el conjunto de valores de cada variable
+>  matrix1.data = new float[][] {
+>    new float[] {34, 25, 18, 40, 78, 24, 30, 22},
+>    new float[] {46.13, 42.8, 47.1, 54.3, 73.1, 40.5, 50.2, 60.1},
+>    new float[] {1.74, 1.81, 1.67, 1.72, 1.57, 1.80, 1.56, 1.77},
+>    new float[] {1, 2, 4, 1, 3, 1, 1, 2}
+>  };
+```
+Cabe destacar que de no configurar manualmente los margenes, colores, máximos, mínimos y divisiones, se tomaran valores por defecto con el fin de poder realizar una gráfica de forma rápida.
+
+Copyright (c) 2016 Boris Beck, Daniel Herrera
