@@ -31,7 +31,7 @@ Gracias a que es posible mostrar múltiples variables, es posible observar y ana
 #### Parametros de configuración:
 
 ###### Ejes:
-Es posible especificar en cuales de los lados, ya sea ninguno, uno, dos, tres o todos ellos mostrar la escala de los ejes para cada variable. Esto permite un mejor entendimiento de los datos mostrados ya que es posible identificar un valor numérico aproximado para cada una de estas variables.
+Es posible especificar en cuales, de los lados, ya sea ninguno, uno, dos, tres o todos ellos mostrar la escala de los ejes para cada variable. Esto permite un mejor entendimiento de los datos mostrados ya que es posible identificar un valor numérico aproximado para cada una de estas variables.
 
 Esto se logra modificando los atributos de la gráfica:
 ```javascript
@@ -43,7 +43,7 @@ Esto se logra modificando los atributos de la gráfica:
 ```
 
 ###### Etiquetas:
-Las etiquetas facilitan la identificación de los ejes, es una forma muy natural de saber el nombre del parámetro que esta siendo representado en un eje determinado.
+Las etiquetas facilitan la identificación de los ejes, es una forma muy natural de saber el nombre del parámetro que está siendo representado en un eje determinado.
 
 Esta configuración se puede realizar de la siguiente manera:
 ```javascript
@@ -71,7 +71,7 @@ Esta configuración se puede realizar de la siguiente manera:
 ```
 
 ###### Valores:
-Es posible establecer manualmente los valores mínimos, máximos de la matriz, el número de divisiones que tendra cada eje, las etiquetas de la matriz, margenes y por supuesto su conjunto de datos. A continuacón veremos cada uno de ellos.
+Es posible establecer manualmente los valores mínimos, máximos de la matriz, el número de divisiones que tendrá cada eje, las etiquetas de la matriz, márgenes y por supuesto su conjunto de datos. A continuación, veremos cada uno de ellos.
 
 Esta configuración se puede realizar de la siguiente manera:
 ```javascript
@@ -93,6 +93,6 @@ Esta configuración se puede realizar de la siguiente manera:
 >    new float[] {1, 2, 4, 1, 3, 1, 1, 2}
 >  };
 ```
-Cabe destacar que de no configurar manualmente los margenes, colores, máximos, mínimos y divisiones, se tomaran valores por defecto con el fin de poder realizar una gráfica de forma rápida.
+Cabe destacar que de no configurar manualmente los márgenes, colores, máximos, mínimos y divisiones, se tomaran valores por defecto con el fin de poder realizar una gráfica de forma rápida.
 
 Copyright (c) 2016 Boris Beck, Daniel Herrera
